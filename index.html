@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stage 04 | JavaScript</title>
+  <link rel="shortcut icon" href="https://www.svgrepo.com/show/373703/js.svg" type="image/x-icon">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+      list-style: none;
+      text-decoration: none;
+    }
+    html {
+      font-size: 62.5%;
+    }
+    body {
+      font-size: 1.6rem;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    html, body, .app, .page {
+      width: 100%;
+      height: 100%;
+      background-color: #ddd;
+    }
+    .page {
+      max-width: 102.4rem;
+      margin: 0 auto;
+      padding: 3rem;
+    }
+
+    figure img {
+      width: 10rem;
+    }
+    figure figcaption {
+      display: none;
+    }
+
+    ul {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+      /* background-color: blue;; */
+    }
+    ul li a {
+      display: inline-block;
+      width: 30rem;
+      height: 20rem;
+      background-color: blueviolet;
+      border-radius: 1rem;
+
+      background-size: cover;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      
+      transition: all .3s;
+      box-shadow: 0 0 1rem rgba(0, 0, 0, .2);
+    }
+    ul li a:hover {
+      transform: scale(1.2);
+    }
+
+    ul li:nth-child(1) a {
+      background-image: url('https://ae01.alicdn.com/kf/H9564beef38df4aa58a37bf81ebbeaf1cO/14-d-gitos-calculadora-eletr-nica-tela-grande-desktop-calculadoras-de-escrit-rio-em-casa-escola.jpg_Q90.jpg_.webp');
+    }
+    ul li:nth-child(2) a {
+      background-image: url('https://www.plasticadosonho.com.br/wp-content/uploads/2017/12/blog-06-como-calcular-o-imc.jpg');
+    }
+    ul li:nth-child(3) a {
+      background-image: url('https://i.ytimg.com/vi/YlTlcVCSsYQ/maxresdefault.jpg');
+      background-size: 200%;
+      background-position: 50% 20%;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="app">
+    <div class="page">
+      <h1>Introdução ao JavaScript</h1>
+      <figure>
+        <img src="https://www.svgrepo.com/show/373705/js-official.svg" alt="ícone do javascript">
+        <figcaption>JavaScript</figcaption>
+      </figure>
+      <main>
+        <ul>
+          <li><a href="https://ic5ube.csb.app/" title="Calculadora 4 operações" target="_blank"></a></li>
+          <li><a href="https://vescuh.csb.app/" title="Calculadora IMC" target="_blank"></a></li>
+          <li><a href="./jogo-advinhacao.html" title="Jogo da Advinhação" target="_blank"></a></li>
+        </ul>
+      </main>
+    </div>
+  </div>
+  
+</body>
+</html>

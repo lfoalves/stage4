@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Advinhação</title>
+</head>
+<body>
+  <script>
+    let xAttemps = 1;
+    let result = prompt('Advinhe o número que estou pensando? Está entre 0 a 10');
+    let ramdomNumber = Math.round(Math.random() * 10)
+
+    while (Number(result) != ramdomNumber) {
+      result = prompt('Erro, tente novamente:')
+      console.log(result, ramdomNumber)
+      xAttemps++
+    }
+
+    alert('Parabéns o numero que pensei foi '+ ramdomNumber + ' e você adivinhou após ' + xAttemps + ' tentativas');
+  </script>
+</body>
+</html>
