@@ -4,28 +4,28 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jogo da Advinhação</title>
+  <title>Jogo da Adivinhação</title>
 </head>
 <body style="display: flex; flex-direction: column; align-items: center; justify-content: center">
-  <h1>Jogo da Advinhação</h1>
+  <h1>Jogo da Adivinhação</h1>
 
   <button id="jogar">Jogar</button>
 
   <script>
     jogar.onclick = () => {
-      jogoDaAdvinhacao()
+      jogoDaAdivinhacao()
     }
 
-    function jogoDaAdvinhacao() {
+    function jogoDaAdivinhacao() {
       let xAttemps = 1;
       let option = prompt(`
-        Deseja advinhar o numero que pensei?
+        Deseja adivinhar o numero que pensei?
         Está entre 0 e 10!
         Insira [ y ] para continuar. 
       `);
 
       if (option == 'y') {
-        let result = prompt('Advinhe o número que estou pensando! Está entre 0 a 10');
+        let result = prompt('Adivinhe o número que estou pensando! Está entre 0 a 10');
         let ramdomNumber = Math.round(Math.random() * 10)
 
         while (Number(result) != ramdomNumber) {
