@@ -7,18 +7,44 @@
   <title>Jogo da Advinhação</title>
 </head>
 <body>
-  <script>
-    let xAttemps = 1;
-    let result = prompt('Advinhe o número que estou pensando? Está entre 0 a 10');
-    let ramdomNumber = Math.round(Math.random() * 10)
 
-    while (Number(result) != ramdomNumber) {
-      result = prompt('Erro, tente novamente:')
-      console.log(result, ramdomNumber)
-      xAttemps++
+  <button id="jogar">Jogar</button>
+
+  <script>
+    jogar.onclick = () => {
+      jogoDaAdvinhacao()
     }
 
-    alert('Parabéns o numero que pensei foi '+ ramdomNumber + ' e você adivinhou após ' + xAttemps + ' tentativas');
+    function jogoDaAdvinhacao() {
+      let xAttemps = 1;
+      let option = prompt(`
+        Deseja advinhar o numero que pensei?
+        Está entre 0 e 10!
+        Insira [ y ] para continuar. 
+      `);
+
+      if (option == 'y') {
+        let result = prompt('Advinhe o número que estou pensando! Está entre 0 a 10');
+        let ramdomNumber = Math.round(Math.random() * 10)
+
+        while (Number(result) != ramdomNumber) {
+
+            result = prompt('Erro, tente novamente:')
+            console.log(result, ramdomNumber)
+            xAttemps++
+            if (result == null) {
+              alert(`
+              Ok. Você desistiu!
+              O resultado era ${ramdomNumber}
+              `)
+            }
+        }
+
+        alert('Parabéns o numero que pensei foi '+ ramdomNumber + ' e você adivinhou após ' + xAttemps + ' tentativas');
+      } else {
+        alert('Você finalizou o programa.')
+      }
+    }
   </script>
 </body>
 </html>
